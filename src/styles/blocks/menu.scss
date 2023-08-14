@@ -1,0 +1,78 @@
+.menu {
+  z-index: 9;
+  padding-top: 111px;
+  background-color: #c2c2c2;
+  overflow-y: auto;
+
+  @include onTablet {
+    padding-top: 118px;
+  }
+
+  @include onDesktop {
+    padding-top: 152px;
+  }
+
+  &__list {
+    margin-bottom: 40px;
+  }
+
+  &__item {
+    margin-bottom: 24px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    padding-bottom: 8px;
+    border-bottom: 1px solid transparent;
+
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 22px;
+    color: $secondary-color;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    transition: border-color $transition-duration linear;
+
+    @include onDesktop {
+      font-weight: 700;
+    }
+
+    &:hover {
+      border-color: $secondary-color;
+    }
+  }
+
+  &__call {
+    display: block;
+    width: max-content;
+
+    font-weight: 600;
+    text-transform: uppercase;
+    color: $secondary-color;
+
+    @include onDesktop {
+      font-weight: 700;
+    }
+
+    &--phone {
+      font-size: 16px;
+      line-height: 27px;
+      margin-bottom: 16px;
+    }
+
+    &--action {
+      padding-bottom: 8px;
+
+      font-size: 12px;
+      line-height: 16px;
+      letter-spacing: 2px;
+
+      border-bottom: 1px solid $secondary-color;
+    }
+  }
+}

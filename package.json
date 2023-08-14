@@ -1,0 +1,33 @@
+{
+  "name": "met-landing-page",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "sass": "^1.63.6"
+  },
+  "devDependencies": {
+    "@linthtml/linthtml": "^0.8.3",
+    "colors": "^1.3.3",
+    "eslint": "^5.16.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-node": "^9.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "jest": "^27.3.1",
+    "stylelint": "^13.5.0",
+    "stylelint-config-recommended-scss": "^4.2.0",
+    "stylelint-scss": "^3.17.2",
+    "vite": "^4.4.0"
+  },
+  "browserslist": [
+    "last 2 versions"
+  ]
+}
